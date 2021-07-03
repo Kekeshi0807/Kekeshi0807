@@ -1,0 +1,8 @@
+par(mfrow=c(2,1))
+plot(EQ5, main="Wattson")
+plot(EXP6, main="Bloodhound")
+
+par(mfrow=c(3,1))
+acf(soi, 48, main="Apex")
+acf(rec, 48, main="Legends")
+ccf(soi, rec, 48, main="predators", ylab="CCF")
